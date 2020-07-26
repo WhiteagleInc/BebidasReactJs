@@ -18,7 +18,7 @@ function getModalStyle() {
 const useStyles = makeStyles(theme => ({
     paper: {
       position: 'absolute',
-      width: 600,
+      width: 450,
       backgroundColor: theme.palette.background.paper,
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
@@ -85,7 +85,7 @@ const Receta = ({receta}) => {
                                 handleClose();
                             }}
                             >
-                            <div styles={modalStyle} className={classes.paper}>
+                            <div style={modalStyle} className={classes.paper}>
                                 <h2>{informacion.strDrink}</h2>
                                 <h3 className="mt-4">Instrucciones</h3>
                                 <p>
